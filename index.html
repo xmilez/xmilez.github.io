@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ваша Личная Веб-Страница</title>
-    <script src="index.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #000080;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #1e90ff;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            margin: 50px 0;
+        }
+        .contact-info, .bot-info {
+            background-color: #e6f2ff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e90ff;
+            color: white;
+        }
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Ваши Услуги</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Наши Услуги</h2>
+            <p>Мы предлагаем помощь в предварительной оценке проектной документации перед направлением на экспертизу проектной документации. Консультации по вопросам создания мест приложения труда (МПТ), расчет площади МПТ, помощь в разработке технологических решений.</p>
+        </section>
+        <section class="contact-info">
+            <h2>Контактная информация</h2>
+            <p>Для предложений о сотрудничестве: <a href="mailto:info@vund.ru">info@vund.ru</a></p>
+        </section>
+        <section class="bot-info">
+            <h2>Робот для предварительной оценки стоимости услуг и заказ звонка</h2>
+            <p>Вы можете воспользоваться нашим ботом: <a href="https://t.me/vundrubot" target="_blank">t.me/vundrubot</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ваше Имя. Все права защищены.</p>
+    </footer>
 </body>
 </html>
