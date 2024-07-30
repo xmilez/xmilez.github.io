@@ -6,46 +6,53 @@ document.write(`
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ваша Личная Веб-Страница</title>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            color: #000080;
+            font-family: Roboto, sans-serif;
+            background-color: #e0f7e9; /* Светло-зеленый */
+            color: #333;
             margin: 0;
             padding: 0;
+             line-height: 1.6;
         }
         .container {
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
             padding: 20px;
         }
         header {
             text-align: center;
             padding: 50px 0;
-            background-color: #1e90ff;
+             background-color: #004d40; /* Темно-зеленый */
             color: white;
+              position: relative;
         }
         h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 3em;
+            letter-spacing: 2px;
         }
         section {
             margin: 50px 0;
         }
         .contact-info, .bot-info {
-            background-color: #e6f2ff;
+          background-color: white;
             padding: 20px;
             border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
         footer {
-            text-align: center;
+             text-align: center;
             padding: 20px;
-            background-color: #1e90ff;
+            background-color: #004d40; /* Темно-зеленый */
             color: white;
         }
         a {
-            color: #1e90ff;
+              color: #00796b; /* Средний зеленый */
             text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
