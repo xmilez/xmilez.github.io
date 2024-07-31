@@ -1,0 +1,22 @@
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 50px; /* Размер логотипа */
+    height: 50px;
+    margin-right: 10px; /* Отступ между логотипом и текстом */
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+  }
