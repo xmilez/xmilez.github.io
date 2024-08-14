@@ -26,7 +26,7 @@
         }
         header {
             text-align: center;
-            padding: 50px 0;
+            padding: 30px 0;
              background-color: #269275; /* Темно-зеленый */
             color: white;
               position: relative;
@@ -46,14 +46,24 @@
             font-size: 2.5em;
         }
         section {
-            margin: 50px 0;
+            margin: 30px 0;
         }
         .contact-info, .bot-info {
+           /* background-color: #b3ffb3; /* white */
+           background-color: #a6e7e6; /* Очень светлый желто-зеленый */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .contact-info-card {
            /* background-color: #b3ffb3; /* white */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            text-align: center;
         }
         .proposal {
             background-color: #b3ffb3; /* white */
@@ -62,6 +72,21 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
         }
+        .proposal_common {
+            background-color: #b3ffb3; /* white */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 1.6em;
+            text-align: center;
+        }
+
+
         footer {
             text-align: center;
             padding: 20px;
@@ -84,28 +109,52 @@
     </header>
     <div class="container">
  
- <section class="proposal">
-            <h2>Наши Услуги</h2>
+ <section class="proposal_common">
+            <h2>Услуги</h2>
+
             <p>Мы предлагаем помощь в предварительной оценке проектной документации перед направлением на экспертизу проектной документации.
-            Консультации по вопросам создания мест приложения труда. 
-            Помощь в разработке технологических решений.</p>
-            <h2>Разработка проектной документации по разделам:</h2>
-               <p>Технологические решения (ТХ) автостоянок и помещений общественного назначения;</p> 
-               <p>Отопление, вентиляция и кондиционирование воздуха (ОВК);</p> 
-               <p>Архитектурные решения (АР) жилых и общественных зданий.</p>
-            <h2>Технический контроль качества проектной документации по разделам ТХ, АР и ОВК </h2>
-            <h2>Разработка программных продуктов для автоматизации процессов проектирования и оценки проектных решений</h2>
+                Консультации по вопросам создания мест приложения труда. 
+                Помощь в разработке технологических решений</p>
         </section>
+
+    </section>
+
+        <section class="proposal">
+            
+            <h2>Разработка проектной документации по разделам</h2>
+               <p>Технологические решения (ТХ) автостоянок и помещений общественного назначения</p> 
+               <p>Отопление, вентиляция и кондиционирование воздуха (ОВК)</p> 
+               <p>Архитектурные решения (АР) жилых и общественных зданий</p>
+            <h2>Предварительная оценка </h2>
+                 <p> Оценка проектной документации по разделам ТХ, АР и ОВК перед направлением на экспертизу проектной документации</p>
+                 <p> Консультации по вопросам проектирования и строительства с выдачей рекомендаций</p>
+            <h2>Разработка приложений
+                </h2>
+                <p> Программные продукты и web-приложения для автоматизации процессов проектирования</p>
+
+                <p> </p>
+            
+        </section>
+
+
+
+
+
         <section class="contact-info">
-            <h2>Написать нам</h2>
-            <p>Для предложений о сотрудничестве: <a href="mailto:info@vund.ru">info@vund.ru</a></p>
+            <h2>Связаться с нами</h2>
+            <p>Уточнить актуальные контакты и детали услуг, направить предложения о сотрудничестве можно в телеграм-боте или по почте
+        
+            </p>
+                <h3>
+                    <a href="https://t.me/vundrubot" target="_blank">t.me/vundrubot</a>
+                </h3>   
+            
+                   <h3>
+                    <a href="mailto:info@vund.ru">info@vund.ru</a>
+                   </h3> 
+
         </section>
-        <section class="bot-info">
-            <h2>Для связи с менеджером и заказа звонка</h2> 
-            <!-- Робот для предварительной оценки стоимости услуг 
-             и заказ звонка -->
-             <p>Вы можете воспользоваться нашим ботом: <a href="https://t.me/vundrubot" target="_blank">t.me/vundrubot</a></p>
-        </section>
+
     </div>
     <footer>
         <p>
