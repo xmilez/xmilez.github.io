@@ -20,6 +20,8 @@
             padding: 0;
              line-height: 1.6;
         }
+
+        
         .container {
             width: 85%;
             margin: 0 auto;
@@ -64,6 +66,9 @@
             margin: 30px, 10px, 0, 10px;
 
         }
+
+      
+
         .proposal_landing {
             background-color: #e5fabc9e; /* #b3ffb3; /* light green */
 
@@ -80,6 +85,8 @@
             padding: 15px 20px 10px 20px;
             
         }
+
+
         .proposal_common {
             background-color: #e5fabc9e; /* #b3ffb3; /* light green */
 
@@ -97,8 +104,10 @@
             padding: 10px 20px 10px 20px;
             
         }
+
+  
         .proposal {
-            background-color: #f5f6f3; /* white */
+            background-color: #f5f6f3bd; /* white */
 
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -108,14 +117,22 @@
             padding: 20px;
 
         }
+        .proposal.dark-mode {
+            background-color: #f5f6f332; 
+
+        }
+
         .contact-info, .bot-info {
            /* background-color: #b3ffb3; /* white */
            background-color: #e5fabc9e;/* #a6e7e6; /* Очень светлый желто-зеленый */
-            padding: 20px 0px 10px 20px;
+            padding: 20px 20px 10px 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin: 1px, 10px, 1px, 10px;
-            text-align: center;
+            text-align: justify;
+        }
+        .contact-info.dark-mode {
+            background-color: #e5fabc4a;/
         }
         .contact-info-card {
            /* background-color: #b3ffb3; /* white */
@@ -128,7 +145,17 @@
         }
 
 
+        body.dark-mode {
+    background-color: #5c6353;
+    color: white;
+}
+        body.dark-mode .section {
+            background-color: #e5fabc21;
+        }
 
+        body.dark-mode .section.proposal_common {
+            background-color: #e5fabc21;
+        }
         
 
         footer {
@@ -243,5 +270,16 @@
                     
          
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const now = new Date();
+    const hours = now.getHours();
+
+    // Установите время, когда должна включаться темная тема (например, с 18:00 до 6:00)
+    if (hours >= 23 || hours < 23:05) {
+        document.body.classList.add('dark-mode');
+    }
+});
+    </script>
 </body>
 </html>
