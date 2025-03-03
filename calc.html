@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUND. Форма входа</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+<link rel="manifest" href="/images/site.webmanifest">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+           /* background-color: #6fc891; /* Светло-зеленый */
+            background-color: #cadbb7; /* gray */
+            color: #333;
+            margin: 0;
+            padding: 0;
+             line-height: 1.6;
+        }
+
+        
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px 0;
+             background-color: #00796b; /*  #4ba59d; #207d64; /* #269275; Темно-зеленый */
+             
+            color: white;
+              position: relative;
+        }
+        .header-container {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    align-items: left;
+    justify-content: left;
+  }
+  .logo {
+    width: 50px; /* Размер логотипа */
+    height: 50px;
+    margin-right: 10px; /* Отступ между логотипом и текстом */
+  }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            
+        }
+        h2 {
+            text-align: left;
+            margin: 1px;
+        }
+        h3 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        section {
+           
+            margin: 30px, 10px, 0, 10px;
+
+        }
+
+      
+
+        .proposal_landing {
+            background-color: #e5fabc9e; /* #b3ffb3; /* light green */
+
+            /* background-color: #a6e7e6; /* blue */
+           /*  padding: 20px; /* */
+            
+
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.072);         
+
+            text-align: justify;
+            
+            margin: 30px 0px 0px 0px ; 
+            padding: 15px 20px 10px 20px;
+            
+        }
+
+
+        .proposal_common {
+            background-color: #e5fabc9e; /* #b3ffb3; /* light green */
+
+            /* background-color: #a6e7e6; /* blue */
+           /*  padding: 20px; /* */
+            
+
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.224);
+           
+         
+
+            text-align: justify;
+            margin: 0px 0 30px ; 
+            padding: 10px 20px 10px 20px;
+            
+        }
+
+  
+        .proposal {
+            background-color: #f5f6f3bd; /* white */
+
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+            text-align: justify;
+            margin: 30px 0 30px ; 
+            padding: 20px;
+
+        }
+        .proposal.dark-mode {
+            background-color: #f5f6f332; 
+
+        }
+
+        .contact-info, .bot-info {
+           /* background-color: #b3ffb3; /* white */
+           background-color: #e5fabc9e;/* #a6e7e6; /* Очень светлый желто-зеленый */
+            padding: 20px 20px 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 1px, 10px, 1px, 10px;
+            text-align: justify;
+        }
+        .contact-info.dark-mode {
+            background-color: #e5fabc4a;/
+        }
+        .contact-info-card {
+           /* background-color: #b3ffb3; /* white */
+           background-color: #f4e08fb0;
+            padding: 0px 40px 0px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.257);
+            margin: 1px, 10px, 1px, 10px;
+            text-align: center;
+        }
+
+
+        body.dark-mode {
+    background-color: #5c6353;
+    color: white;
+}
+        body.dark-mode .section {
+            background-color: #e5fabc21;
+        }
+
+        body.dark-mode .section.proposal_common {
+            background-color: #e5fabc21;
+        }
+        
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #00796b; /* #3f8680;   #207d64; /* #269275; Темно-зеленый */
+       /*     background-color: #269275; /* Темно-зеленый */
+            color: white;
+        }
+        .footer-container {
+            display: flex;
+    align-items: center;
+    justify-content: center;
+        }
+        a {
+            color: #00796b; /* Средний зеленый 00796b */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .center {
+  text-align: center;
+}
+    </style>
+
+
+
+<script
+    type="text/javascript"
+    src="https://pyrus.com/js/webwidget?id=ykTmTvDFPF~iFkPUNsK2-Vtjw4W9lnpHMmJZV~CKdPxRZST6Nufryc-pFT-mGD9uvUgI24~jWI8WPVEt8wqKzVsLZ9~sfJHXbQh8O8bZjHvvBhMX0EZJzDG4Tf0lBTfoqMYMiQ%3D%3D"
+    async=true>
+</script>
+
+<script>
+    !function(n,e){
+    var t="script",c=document.createElement(t);c.async=!0,c.src="https://sbis.link/cst/get_script/",c.onload=function(){
+    window.cnsmrSbis instanceof Function&&window.cnsmrSbis("ae2f9ebe-c01c-4de6-b0cc-0beab0a7fc0b")};
+    var o=document.getElementsByTagName(t)[0];o.parentNode.insertBefore(c,o)}();
+</script>
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="/logo-20240731_103738.png" alt="Logo" width="60" height="60">
+        <h1> &nbsp;VUND </h1>
+     
+
+        
+        </div>
+              
+    </header>
+
+
+
+
+    <div class="container">
+ 
+ <section class="proposal_landing">
+        <h2 class="">
+        Услуги
+        </h2>
+    </section>
+  
+    <section class="proposal_common">
+            <p>
+                Раздел для выполнения самостоятельных расчетов. 
+</p>
+       
+
+    </section>
+
+
+
+        <section class="proposal">
+            
+
+                <p> </p>
+
+                <div class="login-form">
+                    <h2>Для доступа к личному кабинету введите логин и пароль</h2>
+                    <form action="#" method="post">
+                        <input type="text" name="username" placeholder="Логин" required>
+                        <input type="password" name="password" placeholder="Пароль" required>
+                        <button type="submit">Войти</button>
+                    </form>
+                </div>
+            
+        </section>
+
+
+
+
+
+        <section class="contact-info">
+            <h2>Связаться с нами</h2>
+            <p>Уточнить актуальные контакты и детали услуг, направить предложение о&nbsp;сотрудничестве можно в телеграм-боте или по&nbsp;почте
+
+            </p>
+        </section>
+            <section class="contact-info-card">
+            
+                <h3>
+                    <a href="https://t.me/vundrubot" target="_blank">t.me/vundrubot</a>
+                </h3>   
+            
+                   <h3>
+                    <a href="mailto:ask@vund.ru
+                    ?subject=Вопрос для Vund">ask@vund.ru</a>
+                   </h3> 
+                   <h3>
+                     <a href="tel:+74993977943">Позвонить нам</a>
+                   </h3> 
+                   
+                    
+                  
+        </section>
+
+    </div>
+    <footer>
+        <div class="footer-container">
+            <img src="/logo.png" alt="Logo" width="15" height="15">
+            <p>&nbsp;Copyright 2024 &copy;&nbsp;ООО&nbsp;"ВУНД"</p>           
+            
+        
+        </div>
+
+
+                    
+ 
+
+
+    </footer>
+    
+</body>
+</html>
